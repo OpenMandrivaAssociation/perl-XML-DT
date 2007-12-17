@@ -20,7 +20,6 @@ BuildRequires:	perl(LWP::UserAgent)
 BuildRequires:	perl(XML::LibXML) >= %{req_xml_libxml_version}
 BuildRequires:	perl(XML::DTDParser)
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 The XML::DT module is a perl module that does XML down translation.
