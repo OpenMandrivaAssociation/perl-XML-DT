@@ -1,6 +1,6 @@
 %define module 	XML-DT
 %define version 0.51
-%define release %mkrel 3
+%define release %mkrel 4
 
 %define req_xml_libxml_version 1.54
 
