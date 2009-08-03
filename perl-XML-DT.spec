@@ -1,18 +1,18 @@
-%define module 	XML-DT
-%define version 0.53
-%define release %mkrel 1
+%define upstream_name 	 XML-DT
+%define upstream_version 0.53
 
-%define req_xml_libxml_version 1.54
+%define req_xml_libxml_version %perl_convert_version 1.54
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	A perl XML down translate module
-Name: 		perl-%{module}
-Version: 	%{version}
-Release: 	%{release}
 License: 	GPL
-Url:		http://search.cpan.org/dist/%{module}
 Group:		Development/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{module}-%{version}.tar.bz2
-Requires: 	perl-XML-LibXML >= %{req_xml_libxml_version}
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -20,7 +20,8 @@ BuildRequires:	perl(LWP::UserAgent)
 BuildRequires:	perl(XML::LibXML) >= %{req_xml_libxml_version}
 BuildRequires:	perl(XML::DTDParser)
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
+Requires: 	perl-XML-LibXML >= %{req_xml_libxml_version}
 
 %description
 The XML::DT module is a perl module that does XML down translation.
@@ -28,7 +29,7 @@ Based on XML::LibXML, it is designed to perform simple and
 compact translation/processing of XML documents.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 chmod 755 examples/*.pl
@@ -53,5 +54,3 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_mandir}/*/*
 %{perl_vendorlib}/XML
-
-
