@@ -1,5 +1,5 @@
 %define upstream_name 	 XML-DT
-%define upstream_version 0.54
+%define upstream_version 0.56
 
 %define req_xml_libxml_version %perl_convert_version 1.54
 
