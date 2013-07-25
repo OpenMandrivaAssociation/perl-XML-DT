@@ -1,17 +1,17 @@
 %define upstream_name 	 XML-DT
-%define upstream_version 0.56
+%define upstream_version 0.63
 
 %define req_xml_libxml_version %perl_convert_version 1.54
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.63
+Release:	1
 
 Summary:	A perl XML down translate module
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/XML/XML-DT-0.63.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(LWP::UserAgent)
@@ -144,4 +144,5 @@ make test
 - Remove hardcoded Requires
 - add url, rpmbuildupdate
 - [DIRM]
+
 
