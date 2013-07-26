@@ -1,2 +1,4 @@
+removed_sources:
+  XML-DT-0.56.tar.bz2: 1c709409e4d81d23d16ab162f72673f9e10576e7
 sources:
-  "XML-DT-0.56.tar.bz2": 1c709409e4d81d23d16ab162f72673f9e10576e7
+  XML-DT-0.63.tar.gz: cbc2fd34da0ea9ce4f7a64e93dbf0f928a25562c
