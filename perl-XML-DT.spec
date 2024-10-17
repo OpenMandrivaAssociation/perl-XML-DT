@@ -10,7 +10,7 @@ Release:	3
 Summary:	A perl XML down translate module
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/XML/XML-DT-0.63.tar.gz
 
 BuildRequires:	perl-devel
