@@ -13,6 +13,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/XML/XML-DT-0.63.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(LWP::UserAgent)
 BuildRequires:	perl(XML::LibXML) >= %{req_xml_libxml_version}
